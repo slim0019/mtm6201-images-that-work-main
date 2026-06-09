@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridgeline — Gear for the Trail</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+    TASK 1 — Logo: optimize the SVG.
+  ============================================================ -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#" class="logo-link">
+        <img src="images/ridgeline-logo.svg" alt="" class="logo">
+      </a>
+      <nav class="site-nav">
+        <a href="#">Gear</a>
+        <a href="#">Trail Notes</a>
+        <a href="#">About</a>
+        <a href="#" class="nav-cta">Shop Now</a>
+      </nav>
+    </div>
+  </header>
+
+
+  <!-- ============================================================
+    TASK 2 — Hero: optimize with Squoosh
+    Complete this before Task 3 — you need these files ready first.
+    Open images/hero.png in Squoosh and export four WebP versions.
+
+    TASK 3 — Hero: replace background image + resolution switching
+    The hero is a CSS background image — remove it and replace it
+    with a real <img> so srcset can work.
+  ============================================================ -->
+  <section class="hero">
+    <img
+  src="images/hero.png"
+  srcset="
+    images/hero-400.webp 400w,
+    images/hero-800.webp 800w,
+    images/hero-1200.webp 1200w,
+    images/hero-1920.webp 1920w"
+  sizes="100vw"
+  alt="Hikers walking on a mountain trail">
+    <div class="hero__content">
+      <p class="hero__label">Spring / Summer 2026</p>
+      <h1 class="hero__title">Built for<br>the Trail</h1>
+      <p class="hero__sub">Technical gear for people who go further.</p>
+      <a href="#" class="btn btn--primary">Shop the Collection</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    TASK 4 — Product images: optimize with Squoosh
+    Both product images are large PNGs. WebP is fully supported
+    by all modern browsers — no fallback needed, just use it directly.
+  ============================================================ -->
+  <section class="featured-gear">
+    <div class="section-header">
+      <h2>Featured Gear</h2>
+      <p>Tested on the Gatineau Hills. Ready for anywhere.</p>
+    </div>
+    <div class="gear-grid">
+
+      <article class="gear-card">
+        <div class="gear-card__image">
+          <!-- Task 4: Update src to product-jacket.webp -->
+          <img src="images/product-jacket.webp" alt="Ridgeline Apex Shell Jacket in olive green">
+        </div>
+        <div class="gear-card__body">
+          <span class="gear-card__tag">Outerwear</span>
+          <h3 class="gear-card__title">Apex Shell Jacket</h3>
+          <p class="gear-card__desc">Three-layer construction. Fully seam-sealed. Packs into its own chest pocket. The jacket you grab without thinking.</p>
+          <div class="gear-card__footer">
+            <span class="gear-card__price">$349</span>
+            <a href="#" class="btn btn--small">View Details</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="gear-card">
+        <div class="gear-card__image">
+          <!-- Task 4: Update src to product-boots.webp -->
+          <img src="images/product-boots.webp" alt="Ridgeline Summit Mid hiking boots in brown leather">
+        </div>
+        <div class="gear-card__body">
+          <span class="gear-card__tag">Footwear</span>
+          <h3 class="gear-card__title">Summit Mid Boot</h3>
+          <p class="gear-card__desc">Full-grain leather upper. Vibram outsole. Waterproof membrane. Broken in after 10km, reliable for the next 1,000.</p>
+          <div class="gear-card__footer">
+            <span class="gear-card__price">$289</span>
+            <a href="#" class="btn btn--small">View Details</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    TASK 5 — Blog images: optimize with Squoosh
+    Same approach as Task 4 — optimize all three to WebP and
+    update the src on each <img> to point to the new file.
+  ============================================================ -->
+  <section class="trail-notes">
+    <div class="trail-notes__inner">
+      <div class="section-header">
+        <h2>Trail Notes</h2>
+        <p>Dispatches from the field.</p>
+      </div>
+      <div class="notes-grid">
+
+        <article class="note-card">
+          <div class="note-card__image">
+            <!-- Task 5: Update src to note-rideau.webp -->
+            <img src="images/note-rideau.webp" alt="A hiker crossing a wooden bridge on the Rideau Trail">
+          </div>
+          <div class="note-card__body">
+            <div class="note-card__meta">
+              <span class="note-card__tag">Gear Review</span>
+              <span class="note-card__date">March 2026</span>
+            </div>
+            <h3>Five Days on the Rideau Trail: What Held Up</h3>
+            <p>We took the full Apex kit north of Kingston for a five-day loop. Here's what surprised us, what didn't, and what we'd do differently.</p>
+            <a href="#" class="text-link">Read more →</a>
+          </div>
+        </article>
+
+        <article class="note-card">
+          <div class="note-card__image">
+            <!-- Task 5: Update src to note-gatineau.webp -->
+            <img src="images/note-gatineau.webp" alt="Snow-covered trees on a Gatineau Hills winter trail">
+          </div>
+          <div class="note-card__body">
+            <div class="note-card__meta">
+              <span class="note-card__tag">How To</span>
+              <span class="note-card__date">February 2026</span>
+            </div>
+            <h3>How to Layer for a Gatineau Winter Hike</h3>
+            <p>Minus 20 and clear skies. The Gatineau Hills in February are brutal and beautiful. Your layering system makes or breaks the day.</p>
+            <a href="#" class="text-link">Read more →</a>
+          </div>
+        </article>
+
+        <article class="note-card">
+          <div class="note-card__image">
+            <!-- Task 5: Update src to note-supply.webp -->
+             <img src="images/note-supply.webp" alt="Supply chain article">
+            
+          </div>
+          <div class="note-card__body">
+            <div class="note-card__meta">
+              <span class="note-card__tag">Sustainability</span>
+              <span class="note-card__date">January 2026</span>
+            </div>
+            <h3>Why We Rebuilt Our Supply Chain from Scratch</h3>
+            <p>Three years ago we started over. We'll tell you exactly why — and what it cost us to do the right thing.</p>
+            <a href="#" class="text-link">Read more →</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    TASK 6 — Banner: optimize and prepare two crops
+    Open images/landscape-banner.png in Squoosh and export two
+    versions before touching the HTML:
+
+    TASK 7 — Banner: art direction with <picture>
+    The banner is a CSS background image — same fix as Task 3.
+  ============================================================ -->
+  <section class="landscape-banner">
+      <picture>
+    <source media="(max-width: 768px)" srcset="images/banner-portrait.webp">
+    <source media="(min-width: 769px)" srcset="images/banner-wide.webp">
+    <img src="images/banner-wide.webp" alt="A misty forest trail at dawn">
+  </picture>
+
+    <!-- Task 7: Add your <picture> element here, before landscape-banner__content -->
+    <div class="landscape-banner__content">
+      <h2>Every trail<br>has a story.</h2>
+      <p>Ridgeline gear is built for the ones worth telling.</p>
+      <a href="#" class="btn btn--outline">Find Your Trail</a>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+    FOOTER — no changes needed here
+  ============================================================ -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <p class="footer-logo-text">RIDGELINE</p>
+        <p class="footer-tagline">Ottawa-made. Trail-tested.</p>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <a href="#">Outerwear</a>
+          <a href="#">Footwear</a>
+          <a href="#">Accessories</a>
+          <a href="#">Sale</a>
+        </div>
+        <div class="footer-col">
+          <h4>Company</h4>
+          <a href="#">About Us</a>
+          <a href="#">Trail Notes</a>
+          <a href="#">Sustainability</a>
+          <a href="#">Careers</a>
+        </div>
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="#">Sizing Guide</a>
+          <a href="#">Returns</a>
+          <a href="#">Warranty</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-base">
+      <p>© 2026 Ridgeline Gear Co. All rights reserved.</p>
+      <p>Designed and built in Ottawa, ON.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
